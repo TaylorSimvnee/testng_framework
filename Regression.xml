@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <test name="All Functionalities">
+        <classes>
+            <class name="scripts._01_AppleTest">
+                <methods>
+                    <exclude name="testAppleTitle"/>
+                </methods>
+            </class>
+            <class name="scripts._04_GoogleSearchTest">
+                <methods>
+                    <exclude name="testGoogleSearch"/>
+                </methods>
+            </class>
+            <class name="scripts._03_EtsyTest">
+                <methods>
+                    <include name="testMainHeader"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

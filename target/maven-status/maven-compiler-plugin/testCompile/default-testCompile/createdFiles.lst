@@ -1,0 +1,16 @@
+pages/TGApplicationPage.class
+scripts/_04_GoogleSearchTest.class
+testng_learning/_01_Annotations.class
+utilities/DropdownHandler.class
+testng_learning/_02_Priority_Keyword.class
+scripts/_07_DropdownTest.class
+scripts/_03_EtsyTest.class
+utilities/Waiter.class
+pages/FaceBookPage.class
+pages/EtsySearchPage.class
+utilities/Driver.class
+scripts/_01_AppleTest.class
+pages/GoogleSearchPage.class
+scripts/Base.class
+pages/GoogleResultsPage.class
+scripts/_02_TechGlobalTest.class
