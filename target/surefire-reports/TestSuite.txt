@@ -1,17 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 64.975 sec <<< FAILURE! - in TestSuite
-testEtsySearch(scripts._03_EtsyTest)  Time elapsed: 31.997 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":".wt-display-inline-flex-sm>span"}
-  (Session info: chrome=101.0.4951.64)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522b:5c00:0:0:0:b0f3%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:59203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7cb2d8f9c1382c1d48b3763466210974
-*** Element info: {Using=css selector, value=.wt-display-inline-flex-sm>span}
-	at scripts._03_EtsyTest.testEtsySearch(_03_EtsyTest.java:42)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.552 sec <<< FAILURE! - in TestSuite
+testMainHeader(scripts._03_EtsyTest)  Time elapsed: 2.126 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Father's Day Gifts] but found [Shop Home Sales!]
+	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:94)
 

@@ -27,4 +27,13 @@ public class EtsySearchPage {
 
     @FindBy(css = "ul[data-ui='top-nav-category-list'] a")
     public List<WebElement> meanHeaderLinks;
+
+    @FindBy(css = ".signin-header-action")
+    public WebElement signInButton;
+
+    @FindBy(css = ".wt-overlay--animation-done")
+    public WebElement signInModal;
+
+    @FindBy(id = "join-neu-overlay-title")
+    public WebElement signInModalHeading;
 }

@@ -2,6 +2,7 @@ pages/TGApplicationPage.class
 scripts/_04_GoogleSearchTest.class
 testng_learning/_01_Annotations.class
 utilities/DropdownHandler.class
+testng_learning/_04_Optional_Assertion_Error_Message.class
 testng_learning/_02_Priority_Keyword.class
 scripts/_07_DropdownTest.class
 scripts/_03_EtsyTest.class
@@ -10,6 +11,7 @@ pages/FaceBookPage.class
 pages/EtsySearchPage.class
 utilities/Driver.class
 scripts/_01_AppleTest.class
+testng_learning/_03_Soft_vs_Hard_Assertions.class
 pages/GoogleSearchPage.class
 scripts/Base.class
 pages/GoogleResultsPage.class

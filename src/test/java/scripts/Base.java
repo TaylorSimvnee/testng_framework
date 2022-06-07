@@ -6,36 +6,45 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
 import pages.*;
 import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
 
 public class Base {
-
     WebDriver driver;
     WebDriverWait explicitWait;
     Wait fluentWait;
+    SoftAssert softAssert;
     EtsySearchPage etsySearchPage;
     TGApplicationPage tgApplicationPage;
-    GoogleResultsPage googleResultsPage;
     GoogleSearchPage googleSearchPage;
+    GoogleResultsPage googleSearchResultPage;
+    HeroAppPage heroAppPage;
     FaceBookPage faceBookPage;
+    ExpediaPage expediaPage;
 
     @BeforeMethod
     public void setup(){
         driver = Driver.getDriver();
         explicitWait = new WebDriverWait(driver, 30);
         fluentWait = new FluentWait(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(2, TimeUnit.SECONDS).ignoring(Exception.class);
+        softAssert = new SoftAssert();
         etsySearchPage = new EtsySearchPage(driver);
         tgApplicationPage = new TGApplicationPage(driver);
-        googleResultsPage = new GoogleResultsPage(driver);
         googleSearchPage = new GoogleSearchPage(driver);
+        googleSearchResultPage = new GoogleResultsPage(driver);
+        heroAppPage = new HeroAppPage(driver);
         faceBookPage = new FaceBookPage(driver);
+        expediaPage = new ExpediaPage(driver);
     }
 
     @AfterMethod
     public void teardown(){
+        //TODO if there is a failure, take screenshot and attach it to the report
+        softAssert.assertAll();
         Driver.quitDriver();
     }
 }
+

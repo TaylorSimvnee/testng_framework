@@ -18,6 +18,9 @@
                     <include name="testMainHeader"/>
                 </methods>
             </class>
+            <class name="scripts._05_CheckBoxTest"/>
+            <class name="scripts._06_RadioButtonTest"/>
+            <class name="scripts._07_DropdownTest"/>
         </classes>
     </test>
 </suite>

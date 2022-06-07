@@ -8,42 +8,15 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Smoke</th></tr>
-<tr><td><a href="#t0">Critical Functionalities</a></td><td class="num">4</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">64,591</td><td></td><td></td></tr>
+<tr><th colspan="8">Regression</th></tr>
+<tr><td><a href="#t0">All Functionalities</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,067</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Critical Functionalities &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts._03_EtsyTest</td><td><a href="#m0">testEtsySearch</a></td><td rowspan="1">1653853758148</td><td rowspan="1">31991</td></tr><tr><th colspan="4">Critical Functionalities &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">scripts._03_EtsyTest</td><td><a href="#m1">testEtsySearchResult</a></td><td rowspan="1">1653853793281</td><td rowspan="1">0</td></tr><tr><th colspan="4">Critical Functionalities &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts._01_AppleTest</td><td><a href="#m2">testAppleTitle</a></td><td rowspan="1">1653853731363</td><td rowspan="1">845</td></tr><tr class="passedodd"><td rowspan="1">scripts._02_TechGlobalTest</td><td><a href="#m3">testApplicationFormHeading</a></td><td rowspan="1">1653853737367</td><td rowspan="1">1127</td></tr><tr class="passedeven"><td rowspan="1">scripts._03_EtsyTest</td><td><a href="#m4">testEtsyLogo</a></td><td rowspan="1">1653853751185</td><td rowspan="1">1889</td></tr><tr class="passedodd"><td rowspan="1">scripts._04_GoogleSearchTest</td><td><a href="#m5">testGoogleSearch</a></td><td rowspan="1">1653853743600</td><td rowspan="1">2468</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All Functionalities &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts._03_EtsyTest</td><td><a href="#m0">testMainHeader</a></td><td rowspan="1">1654216751815</td><td rowspan="1">2122</td></tr><tr><th colspan="4">All Functionalities &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts._01_AppleTest</td><td><a href="#m1">testAppleURL</a></td><td rowspan="1">1654216745592</td><td rowspan="1">877</td></tr></tbody>
 </table>
-<h2>Critical Functionalities</h2><h3 id="m0">scripts._03_EtsyTest#testEtsySearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.wt-display-inline-flex-sm&gt;span&quot;}
-  (Session info: chrome=101.0.4951.64)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Taylors-MacBook-Pro.local&apos;, ip: &apos;2600:8800:522b:5c00:0:0:0:b0f3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;11.5.2&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:59203}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7cb2d8f9c1382c1d48b3763466210974
-*** Element info: {Using=css selector, value=.wt-display-inline-flex-sm&gt;span}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.isDisplayed(Unknown Source)
-	at scripts._03_EtsyTest.testEtsySearch(_03_EtsyTest.java:42)
+<h2>All Functionalities</h2><h3 id="m0">scripts._03_EtsyTest#testMainHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Father&apos;s Day Gifts] but found [Shop Home Sales!]
+	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:94)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">scripts._03_EtsyTest#testEtsySearchResult</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method _03_EtsyTest.testEtsySearchResult()[pri:2, instance:scripts._03_EtsyTest@6dde5c8c] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">scripts._01_AppleTest#testAppleTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">scripts._02_TechGlobalTest#testApplicationFormHeading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">scripts._03_EtsyTest#testEtsyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">scripts._04_GoogleSearchTest#testGoogleSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">scripts._01_AppleTest#testAppleURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
