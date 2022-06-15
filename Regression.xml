@@ -8,19 +8,24 @@
                     <exclude name="testAppleTitle"/>
                 </methods>
             </class>
-            <class name="scripts._04_GoogleSearchTest">
-                <methods>
-                    <exclude name="testGoogleSearch"/>
-                </methods>
-            </class>
             <class name="scripts._03_EtsyTest">
                 <methods>
                     <include name="testMainHeader"/>
                 </methods>
             </class>
+            <class name="scripts._04_GoogleSearchTest">
+                <methods>
+                    <exclude name="testGoogleSearch"/>
+                </methods>
+            </class>
             <class name="scripts._05_CheckBoxTest"/>
             <class name="scripts._06_RadioButtonTest"/>
             <class name="scripts._07_DropdownTest"/>
+            <class name="scripts._08_Alerts"/>
+            <class name="scripts._09_IFrames"/>
+            <class name="scripts._10_WindowHandles"/>
+            <class name="scripts._11_FileUpload"/>
+            <class name="scripts._12_Actions_Class"/>
         </classes>
     </test>
 </suite>

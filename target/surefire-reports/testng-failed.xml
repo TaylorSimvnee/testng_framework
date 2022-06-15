@@ -10,6 +10,36 @@
           <include name="testMainHeader"/>
         </methods>
       </class> <!-- scripts._03_EtsyTest -->
+      <class name="scripts._11_FileUpload">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testFileUpload1"/>
+          <include name="testFileDownload"/>
+        </methods>
+      </class> <!-- scripts._11_FileUpload -->
+      <class name="scripts._08_Alerts">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testEtsySignInModal"/>
+          <include name="testAmazonAddressModal"/>
+        </methods>
+      </class> <!-- scripts._08_Alerts -->
+      <class name="scripts._07_DropdownTest">
+        <methods>
+          <include name="setup"/>
+          <include name="testExpediaDropdowns"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- scripts._07_DropdownTest -->
+      <class name="scripts._12_Actions_Class">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="moveToElementPractice"/>
+        </methods>
+      </class> <!-- scripts._12_Actions_Class -->
     </classes>
   </test> <!-- All Functionalities(failed) -->
 </suite> <!-- Failed suite [Regression] -->

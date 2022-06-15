@@ -13,10 +13,12 @@ public class EtsySearchPage {
         PageFactory.initElements(driver, this);
     }
 
+
+    //Locate all Etsy Search Page web elements here
     @FindBy(id = "global-enhancements-search-query")
     public WebElement searchInputBox;
 
-    @FindBy(css = ".wt-display-inline-flex-sm>span")
+    @FindBy(css = "button[data-id='gnav-search-submit-button']")
     public WebElement searchButton;
 
     @FindBy(id = "logo")
@@ -25,8 +27,8 @@ public class EtsySearchPage {
     @FindBy(css = ".wt-display-inline-flex-sm>span")
     public WebElement resultTag;
 
-    @FindBy(css = "ul[data-ui='top-nav-category-list'] a")
-    public List<WebElement> meanHeaderLinks;
+    @FindBy(css = "ul[data-ui='top-nav-category-list'] span")
+    public List<WebElement> mainHeaderLinks;
 
     @FindBy(css = ".signin-header-action")
     public WebElement signInButton;
@@ -36,4 +38,7 @@ public class EtsySearchPage {
 
     @FindBy(id = "join-neu-overlay-title")
     public WebElement signInModalHeading;
+
+    @FindBy(css = "ul[data-node-id='10855']>li")
+    public List<WebElement> jewelryAndAccessoriesItems;
 }

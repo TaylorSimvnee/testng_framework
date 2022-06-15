@@ -1,8 +1,57 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.552 sec <<< FAILURE! - in TestSuite
-testMainHeader(scripts._03_EtsyTest)  Time elapsed: 2.126 sec  <<< FAILURE!
-java.lang.AssertionError: expected [Father's Day Gifts] but found [Shop Home Sales!]
-	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:94)
+Tests run: 25, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 449.023 sec <<< FAILURE! - in TestSuite
+testExpediaDropdowns(scripts._07_DropdownTest)  Time elapsed: 39.47 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#preferred\-class\-input\-trigger"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522a:8e00:0:0:0:2c39%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:59305}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efb6a4c397250a070d32f5b89a396c33
+*** Element info: {Using=id, value=preferred-class-input-trigger}
+	at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:77)
+
+testEtsySignInModal(scripts._08_Alerts)  Time elapsed: 5.65 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Sign in] but found [Sign in to continue]
+	at scripts._08_Alerts.testEtsySignInModal(_08_Alerts.java:26)
+
+testMainHeader(scripts._03_EtsyTest)  Time elapsed: 4.342 sec  <<< FAILURE!
+java.lang.AssertionError: The expected text IS NOT displayed expected [Shop Home Sales!] but found [Father's Day Gifts]
+	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:93)
+
+testAmazonAddressModal(scripts._08_Alerts)  Time elapsed: 15.496 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at scripts._08_Alerts.testAmazonAddressModal(_08_Alerts.java:153)
+
+testFileUpload1(scripts._11_FileUpload)  Time elapsed: 6.19 sec  <<< FAILURE!
+org.openqa.selenium.InvalidArgumentException: 
+invalid argument: File not found : /Users/techglobal/IdeaProjects/testng_framework/myFileTech2.xls
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522a:8e00:0:0:0:2c39%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:60196}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 70ce2d9fbfd192904adfd6291b36d050
+	at scripts._11_FileUpload.testFileUpload1(_11_FileUpload.java:24)
+
+testFileDownload(scripts._11_FileUpload)  Time elapsed: 17.25 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"myFileTech2.xls"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522a:8e00:0:0:0:2c39%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:60219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b336bb916b568ea59cce9ecb114e3ae
+*** Element info: {Using=link text, value=myFileTech2.xls}
+	at scripts._11_FileUpload.testFileDownload(_11_FileUpload.java:49)
+
+moveToElementPractice(scripts._12_Actions_Class)  Time elapsed: 8.88 sec  <<< FAILURE!
+java.lang.AssertionError: expected [2860 S River Rd Suite 350, Des Plaines IL 60018] but found [[[ChromeDriver: chrome on MAC (06d26a15bb00dc1b785f678052f37e73)] -> css selector: #comp-kixny3ro span>span]]
+	at scripts._12_Actions_Class.moveToElementPractice(_12_Actions_Class.java:30)
 

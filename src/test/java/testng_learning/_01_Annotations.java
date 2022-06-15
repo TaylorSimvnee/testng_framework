@@ -54,5 +54,18 @@ public class _01_Annotations {
     public void afterClass(){
         System.out.println("This is after the class");
     }
+      EXPECTED OUTPUT:
+    This is BEFORE SUITE
+    This is BEFORE TEST
+    This is BEFORE CLASS
+    This is BEFORE METHOD
+    This is TEST1
+    This is AFTER METHOD
+    This is BEFORE METHOD
+    This is TEST2
+    This is AFTER METHOD
+    This is AFTER CLASS
+    This is AFTER TEST
+    This is AFTER SUITE
 */
 }

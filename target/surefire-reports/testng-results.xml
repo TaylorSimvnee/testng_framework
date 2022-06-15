@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="8" passed="1" failed="1" skipped="0">
+<testng-results ignored="6" total="31" passed="18" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-02T17:39:03 MST" name="Regression" finished-at="2022-06-02T17:39:17 MST" duration-ms="14067">
+  <suite started-at="2022-06-11T16:08:43 MST" name="Regression" finished-at="2022-06-11T16:16:11 MST" duration-ms="448635">
     <groups>
     </groups>
-    <test started-at="2022-06-02T17:39:03 MST" name="All Functionalities" finished-at="2022-06-02T17:39:17 MST" duration-ms="14067">
+    <test started-at="2022-06-11T16:08:43 MST" name="All Functionalities" finished-at="2022-06-11T16:16:11 MST" duration-ms="448635">
       <class name="scripts._03_EtsyTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._03_EtsyTest@6dde5c8c]" started-at="2022-06-02T17:39:09 MST" name="setup" finished-at="2022-06-02T17:39:11 MST" duration-ms="2228" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._03_EtsyTest@2b6856dd]" started-at="2022-06-11T16:11:28 MST" name="setup" finished-at="2022-06-11T16:11:30 MST" duration-ms="2495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testMainHeader()[pri:4, instance:scripts._03_EtsyTest@6dde5c8c]" started-at="2022-06-02T17:39:11 MST" name="testMainHeader" description="Validate Etsy main header" finished-at="2022-06-02T17:39:13 MST" duration-ms="2122" status="FAIL">
+        <test-method signature="testMainHeader()[pri:4, instance:scripts._03_EtsyTest@2b6856dd]" started-at="2022-06-11T16:11:30 MST" name="testMainHeader" description="TC905: Validate Etsy main header" finished-at="2022-06-11T16:11:34 MST" duration-ms="4341" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Father's Day Gifts] but found [Shop Home Sales!]]]>
+              <![CDATA[The expected text IS NOT displayed expected [Shop Home Sales!] but found [Father's Day Gifts]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Father's Day Gifts] but found [Shop Home Sales!]
+              <![CDATA[java.lang.AssertionError: The expected text IS NOT displayed expected [Shop Home Sales!] but found [Father's Day Gifts]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:94)
+at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:93)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
@@ -59,25 +58,655 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMainHeader -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._03_EtsyTest@6dde5c8c]" started-at="2022-06-02T17:39:13 MST" name="teardown" finished-at="2022-06-02T17:39:17 MST" duration-ms="3129" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._03_EtsyTest@2b6856dd]" started-at="2022-06-11T16:11:34 MST" name="teardown" finished-at="2022-06-11T16:11:38 MST" duration-ms="3166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- scripts._03_EtsyTest -->
-      <class name="scripts._01_AppleTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._01_AppleTest@6fb0d3ed]" started-at="2022-06-02T17:39:03 MST" name="setup" finished-at="2022-06-02T17:39:05 MST" duration-ms="2579" status="PASS">
+      <class name="scripts._11_FileUpload">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._11_FileUpload@45dd4eda]" started-at="2022-06-11T16:13:36 MST" name="setup" finished-at="2022-06-11T16:13:38 MST" duration-ms="2380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAppleURL()[pri:2, instance:scripts._01_AppleTest@6fb0d3ed]" started-at="2022-06-02T17:39:05 MST" name="testAppleURL" description="TC873" finished-at="2022-06-02T17:39:06 MST" duration-ms="877" status="PASS">
+        <test-method signature="testFileUpload1()[pri:1, instance:scripts._11_FileUpload@45dd4eda]" started-at="2022-06-11T16:13:38 MST" name="testFileUpload1" description="File upload" finished-at="2022-06-11T16:13:44 MST" duration-ms="6189" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[invalid argument: File not found : /Users/techglobal/IdeaProjects/testng_framework/myFileTech2.xls
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522a:8e00:0:0:0:2c39%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:60196}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 70ce2d9fbfd192904adfd6291b36d050]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : /Users/techglobal/IdeaProjects/testng_framework/myFileTech2.xls
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522a:8e00:0:0:0:2c39%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:60196}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 70ce2d9fbfd192904adfd6291b36d050
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
+at scripts._11_FileUpload.testFileUpload1(_11_FileUpload.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFileUpload1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._11_FileUpload@45dd4eda]" started-at="2022-06-11T16:13:44 MST" name="teardown" finished-at="2022-06-11T16:13:48 MST" duration-ms="3116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._11_FileUpload@45dd4eda]" started-at="2022-06-11T16:13:48 MST" name="setup" finished-at="2022-06-11T16:13:50 MST" duration-ms="2427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFileDownload()[pri:2, instance:scripts._11_FileUpload@45dd4eda]" started-at="2022-06-11T16:13:50 MST" name="testFileDownload" description="File download" finished-at="2022-06-11T16:14:07 MST" duration-ms="17249" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"myFileTech2.xls"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522a:8e00:0:0:0:2c39%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:60219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b336bb916b568ea59cce9ecb114e3ae
+*** Element info: {Using=link text, value=myFileTech2.xls}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"myFileTech2.xls"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522a:8e00:0:0:0:2c39%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:60219}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b336bb916b568ea59cce9ecb114e3ae
+*** Element info: {Using=link text, value=myFileTech2.xls}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+at scripts._11_FileUpload.testFileDownload(_11_FileUpload.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFileDownload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._11_FileUpload@45dd4eda]" started-at="2022-06-11T16:14:07 MST" name="teardown" finished-at="2022-06-11T16:14:10 MST" duration-ms="3122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- scripts._11_FileUpload -->
+      <class name="scripts._09_IFrames">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._09_IFrames@6ab7a896]" started-at="2022-06-11T16:12:21 MST" name="setup" finished-at="2022-06-11T16:12:24 MST" duration-ms="2419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testIFrame1()[pri:1, instance:scripts._09_IFrames@6ab7a896]" started-at="2022-06-11T16:12:24 MST" name="testIFrame1" finished-at="2022-06-11T16:12:38 MST" duration-ms="14013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIFrame1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._09_IFrames@6ab7a896]" started-at="2022-06-11T16:12:38 MST" name="teardown" finished-at="2022-06-11T16:12:41 MST" duration-ms="3716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._09_IFrames@6ab7a896]" started-at="2022-06-11T16:12:41 MST" name="setup" finished-at="2022-06-11T16:12:44 MST" duration-ms="2470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testIFrame2()[pri:2, instance:scripts._09_IFrames@6ab7a896]" started-at="2022-06-11T16:12:44 MST" name="testIFrame2" finished-at="2022-06-11T16:12:47 MST" duration-ms="2829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIFrame2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._09_IFrames@6ab7a896]" started-at="2022-06-11T16:12:47 MST" name="teardown" finished-at="2022-06-11T16:13:13 MST" duration-ms="26232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- scripts._09_IFrames -->
+      <class name="scripts._07_DropdownTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._07_DropdownTest@7c417213]" started-at="2022-06-11T16:09:22 MST" name="setup" finished-at="2022-06-11T16:09:25 MST" duration-ms="2527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUnsecurePasswordErrorMessage()[pri:1, instance:scripts._07_DropdownTest@7c417213]" started-at="2022-06-11T16:09:25 MST" name="testUnsecurePasswordErrorMessage" description="TC763: Validate FaceBook sign in error message for password" finished-at="2022-06-11T16:09:40 MST" duration-ms="15517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnsecurePasswordErrorMessage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._07_DropdownTest@7c417213]" started-at="2022-06-11T16:09:40 MST" name="teardown" finished-at="2022-06-11T16:09:43 MST" duration-ms="3116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._07_DropdownTest@7c417213]" started-at="2022-06-11T16:09:52 MST" name="setup" finished-at="2022-06-11T16:09:55 MST" duration-ms="2509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testExpediaDropdowns()[pri:2, instance:scripts._07_DropdownTest@7c417213]" started-at="2022-06-11T16:09:55 MST" name="testExpediaDropdowns" description="TC578: Validate Expedia dropdowns" finished-at="2022-06-11T16:10:34 MST" duration-ms="39463" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#preferred\-class\-input\-trigger"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522a:8e00:0:0:0:2c39%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:59305}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efb6a4c397250a070d32f5b89a396c33
+*** Element info: {Using=id, value=preferred-class-input-trigger}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#preferred\-class\-input\-trigger"}
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Taylors-MacBook-Pro.local', ip: '2600:8800:522a:8e00:0:0:0:2c39%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.5.2', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/g0/6l6hy8rx10j...}, goog:chromeOptions: {debuggerAddress: localhost:59305}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efb6a4c397250a070d32f5b89a396c33
+*** Element info: {Using=id, value=preferred-class-input-trigger}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+at scripts._07_DropdownTest.testExpediaDropdowns(_07_DropdownTest.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpediaDropdowns -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._07_DropdownTest@7c417213]" started-at="2022-06-11T16:10:34 MST" name="teardown" finished-at="2022-06-11T16:10:37 MST" duration-ms="3186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._07_DropdownTest@7c417213]" started-at="2022-06-11T16:10:37 MST" name="setup" finished-at="2022-06-11T16:10:40 MST" duration-ms="2444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEbayDropdown()[pri:3, instance:scripts._07_DropdownTest@7c417213]" started-at="2022-06-11T16:10:40 MST" name="testEbayDropdown" description="TC242: Validate Ebay dropdown" finished-at="2022-06-11T16:10:40 MST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEbayDropdown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._07_DropdownTest@7c417213]" started-at="2022-06-11T16:10:40 MST" name="teardown" finished-at="2022-06-11T16:10:43 MST" duration-ms="3096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- scripts._07_DropdownTest -->
+      <class name="scripts._08_Alerts">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:10:43 MST" name="setup" finished-at="2022-06-11T16:10:45 MST" duration-ms="2354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEtsySignInModal()[pri:1, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:10:45 MST" name="testEtsySignInModal" description="TASK-1 - Regular HTML Alert" finished-at="2022-06-11T16:10:51 MST" duration-ms="5650" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sign in] but found [Sign in to continue]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sign in] but found [Sign in to continue]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at scripts._08_Alerts.testEtsySignInModal(_08_Alerts.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEtsySignInModal -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:10:51 MST" name="teardown" finished-at="2022-06-11T16:10:55 MST" duration-ms="4781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:10:55 MST" name="setup" finished-at="2022-06-11T16:10:58 MST" duration-ms="2757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInformationWarningAlert()[pri:2, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:10:58 MST" name="testInformationWarningAlert" description="TASK-2 - Information-Warning alert" finished-at="2022-06-11T16:11:01 MST" duration-ms="3193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInformationWarningAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:11:01 MST" name="teardown" finished-at="2022-06-11T16:11:05 MST" duration-ms="3115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:11:05 MST" name="setup" finished-at="2022-06-11T16:11:07 MST" duration-ms="2468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testConfirmationAlert()[pri:3, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:11:07 MST" name="testConfirmationAlert" description=" TASK-3 Confirmation Alert" finished-at="2022-06-11T16:11:24 MST" duration-ms="17400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfirmationAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:11:24 MST" name="teardown" finished-at="2022-06-11T16:11:28 MST" duration-ms="3121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:11:38 MST" name="setup" finished-at="2022-06-11T16:11:40 MST" duration-ms="2438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testPromptAlert()[pri:4, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:11:40 MST" name="testPromptAlert" description="TASK-4 Prompt Alert" finished-at="2022-06-11T16:11:57 MST" duration-ms="16815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPromptAlert -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:11:57 MST" name="teardown" finished-at="2022-06-11T16:12:00 MST" duration-ms="3117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:12:00 MST" name="setup" finished-at="2022-06-11T16:12:03 MST" duration-ms="2802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAmazonAddressModal()[pri:5, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:12:03 MST" name="testAmazonAddressModal" description="TASK-5 - Amazon Address Modal" finished-at="2022-06-11T16:12:18 MST" duration-ms="15496" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at scripts._08_Alerts.testAmazonAddressModal(_08_Alerts.java:153)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonAddressModal -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._08_Alerts@15761df8]" started-at="2022-06-11T16:12:18 MST" name="teardown" finished-at="2022-06-11T16:12:21 MST" duration-ms="3126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- scripts._08_Alerts -->
+      <class name="scripts._01_AppleTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._01_AppleTest@37e547da]" started-at="2022-06-11T16:09:43 MST" name="setup" finished-at="2022-06-11T16:09:47 MST" duration-ms="3163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAppleURL()[pri:2, instance:scripts._01_AppleTest@37e547da]" started-at="2022-06-11T16:09:47 MST" name="testAppleURL" description="TC873" finished-at="2022-06-11T16:09:49 MST" duration-ms="2270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAppleURL -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._01_AppleTest@6fb0d3ed]" started-at="2022-06-02T17:39:06 MST" name="teardown" finished-at="2022-06-02T17:39:09 MST" duration-ms="3115" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._01_AppleTest@37e547da]" started-at="2022-06-11T16:09:49 MST" name="teardown" finished-at="2022-06-11T16:09:52 MST" duration-ms="3138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- scripts._01_AppleTest -->
+      <class name="scripts._06_RadioButtonTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._06_RadioButtonTest@6107227e]" started-at="2022-06-11T16:09:00 MST" name="setup" finished-at="2022-06-11T16:09:02 MST" duration-ms="2582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFacebookGenderRadioButtons()[pri:1, instance:scripts._06_RadioButtonTest@6107227e]" started-at="2022-06-11T16:09:02 MST" name="testFacebookGenderRadioButtons" description="TC234: Validate Facebook gender radio buttons" finished-at="2022-06-11T16:09:19 MST" duration-ms="16716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFacebookGenderRadioButtons -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._06_RadioButtonTest@6107227e]" started-at="2022-06-11T16:09:19 MST" name="teardown" finished-at="2022-06-11T16:09:22 MST" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- scripts._06_RadioButtonTest -->
+      <class name="scripts._10_WindowHandles">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._10_WindowHandles@327b636c]" started-at="2022-06-11T16:13:13 MST" name="setup" finished-at="2022-06-11T16:13:16 MST" duration-ms="3036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testTechGlobalSchoolFaceBookIcon()[pri:1, instance:scripts._10_WindowHandles@327b636c]" started-at="2022-06-11T16:13:16 MST" name="testTechGlobalSchoolFaceBookIcon" description=" TEST CASE 1: Validate FaceBook social media icon for TechGlobal School" finished-at="2022-06-11T16:13:25 MST" duration-ms="8504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTechGlobalSchoolFaceBookIcon -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._10_WindowHandles@327b636c]" started-at="2022-06-11T16:13:25 MST" name="teardown" finished-at="2022-06-11T16:13:28 MST" duration-ms="3452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._10_WindowHandles@327b636c]" started-at="2022-06-11T16:13:28 MST" name="setup" finished-at="2022-06-11T16:13:30 MST" duration-ms="2359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testWindowHandle2()[pri:2, instance:scripts._10_WindowHandles@327b636c]" started-at="2022-06-11T16:13:30 MST" name="testWindowHandle2" description="TEST CASE 2: Multiple Windows" finished-at="2022-06-11T16:13:33 MST" duration-ms="2424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWindowHandle2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._10_WindowHandles@327b636c]" started-at="2022-06-11T16:13:33 MST" name="teardown" finished-at="2022-06-11T16:13:36 MST" duration-ms="3113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- scripts._10_WindowHandles -->
+      <class name="scripts._12_Actions_Class">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:14:10 MST" name="setup" finished-at="2022-06-11T16:14:13 MST" duration-ms="2396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="moveToElementPractice()[pri:1, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:14:13 MST" name="moveToElementPractice" description="Actions | move to element 1" finished-at="2022-06-11T16:14:22 MST" duration-ms="8880" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2860 S River Rd Suite 350, Des Plaines IL 60018] but found [[[ChromeDriver: chrome on MAC (06d26a15bb00dc1b785f678052f37e73)] -> css selector: #comp-kixny3ro span>span]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2860 S River Rd Suite 350, Des Plaines IL 60018] but found [[[ChromeDriver: chrome on MAC (06d26a15bb00dc1b785f678052f37e73)] -> css selector: #comp-kixny3ro span>span]]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:563)
+at scripts._12_Actions_Class.moveToElementPractice(_12_Actions_Class.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- moveToElementPractice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:14:22 MST" name="teardown" finished-at="2022-06-11T16:14:25 MST" duration-ms="3132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:14:25 MST" name="setup" finished-at="2022-06-11T16:14:28 MST" duration-ms="2723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="moveToElementPractice2()[pri:2, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:14:28 MST" name="moveToElementPractice2" description="Actions class | move to element 2" finished-at="2022-06-11T16:14:51 MST" duration-ms="23880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- moveToElementPractice2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:14:51 MST" name="teardown" finished-at="2022-06-11T16:14:55 MST" duration-ms="3243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:14:55 MST" name="setup" finished-at="2022-06-11T16:14:57 MST" duration-ms="2477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickOnElementPractice()[pri:3, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:14:57 MST" name="clickOnElementPractice" description="Actions | Click" finished-at="2022-06-11T16:15:05 MST" duration-ms="7889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnElementPractice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:05 MST" name="teardown" finished-at="2022-06-11T16:15:08 MST" duration-ms="3185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:08 MST" name="setup" finished-at="2022-06-11T16:15:11 MST" duration-ms="2437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="rightClickPractice()[pri:4, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:11 MST" name="rightClickPractice" description="Actions | Right click" finished-at="2022-06-11T16:15:16 MST" duration-ms="4857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rightClickPractice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:16 MST" name="teardown" finished-at="2022-06-11T16:15:21 MST" duration-ms="5631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:21 MST" name="setup" finished-at="2022-06-11T16:15:24 MST" duration-ms="2426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickHoldAndReleasePractice()[pri:5, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:24 MST" name="clickHoldAndReleasePractice" description="Actions | Click - hold and release | Drag and drop" finished-at="2022-06-11T16:15:37 MST" duration-ms="13286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickHoldAndReleasePractice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:37 MST" name="teardown" finished-at="2022-06-11T16:15:40 MST" duration-ms="3186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:40 MST" name="setup" finished-at="2022-06-11T16:15:43 MST" duration-ms="2760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sendKeysToAnElement()[pri:6, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:43 MST" name="sendKeysToAnElement" description="Actions class | send keys to an element" finished-at="2022-06-11T16:15:49 MST" duration-ms="5957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendKeysToAnElement -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:49 MST" name="teardown" finished-at="2022-06-11T16:15:52 MST" duration-ms="3116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:52 MST" name="setup" finished-at="2022-06-11T16:15:54 MST" duration-ms="2410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="practiceKeyDownAndKeyUp()[pri:7, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:15:54 MST" name="practiceKeyDownAndKeyUp" description="Actions | key down and key up" finished-at="2022-06-11T16:16:08 MST" duration-ms="13886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practiceKeyDownAndKeyUp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._12_Actions_Class@60611244]" started-at="2022-06-11T16:16:08 MST" name="teardown" finished-at="2022-06-11T16:16:11 MST" duration-ms="3126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- scripts._12_Actions_Class -->
+      <class name="scripts._05_CheckBoxTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:scripts._05_CheckBoxTest@5db45159]" started-at="2022-06-11T16:08:43 MST" name="setup" finished-at="2022-06-11T16:08:47 MST" duration-ms="3908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckBoxInHeroApp()[pri:1, instance:scripts._05_CheckBoxTest@5db45159]" started-at="2022-06-11T16:08:47 MST" name="testCheckBoxInHeroApp" description="TC001: Validate checkbox in hero app" finished-at="2022-06-11T16:08:57 MST" duration-ms="10171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckBoxInHeroApp -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:scripts._05_CheckBoxTest@5db45159]" started-at="2022-06-11T16:08:57 MST" name="teardown" finished-at="2022-06-11T16:09:00 MST" duration-ms="3118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- scripts._05_CheckBoxTest -->
     </test> <!-- All Functionalities -->
   </suite> <!-- Regression -->
 </testng-results>
