@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import utilities.Waiter;
 
 public class _07C_Parallel {
-
+/*
     @Test(priority = 1)
     public void testC1(){
         Waiter.pause(10);
@@ -25,4 +25,6 @@ public class _07C_Parallel {
         System.out.println("This is testC3");
         System.out.println("Thread id = " + Thread.currentThread().getId());
     }
+
+ */
 }

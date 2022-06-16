@@ -6,6 +6,7 @@ import utilities.ConfigReader;
 import utilities.TestData;
 
 public class _06_Parameters {
+    /*
 
     @Test()
     public void login(){
@@ -25,4 +26,6 @@ public class _06_Parameters {
         System.out.println("Username comes from TestData = " + TestData.username);
         System.out.println("Password comes from TestDate = " + TestData.password);
     }
+
+     */
 }
